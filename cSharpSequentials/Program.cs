@@ -24,7 +24,16 @@ namespace cSharpSequentials
                 justAQueue.Dequeue();
             }
 
-            
+            var justAStack = new Stack();
+            justAStack.Push("first");
+            justAStack.Push("second");
+            justAStack.Push("third");
+            justAStack.Push("forth");
+
+            while (justAStack.Count > 0)
+            {
+                Console.WriteLine(justAStack.Pop());
+            }
 
             Console.ReadLine();
         }
